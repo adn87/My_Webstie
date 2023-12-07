@@ -1,0 +1,52 @@
+{% include 'base.html' %}
+<div class="container px-4 py-5">
+    <h2 class="pb-2 border-bottom">Welcome to My Website</h2>
+
+    <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+      <div class="col d-flex flex-column align-items-start gap-2">
+        <h2 class="fw-bold text-body-emphasis">Everything To Know About Me</h2>
+        <p class="text-body-secondary">I created this website so that it would be easier to know me. Each
+        tab on this website explains more about who I am, my work experience, the projects I've worked on, and how to
+        contact me. Without further ado Enjoy getting to know me </p>
+      </div>
+
+      <div class="col">
+        <div class="row row-cols-1 row-cols-sm-2 g-4">
+          <div class="col d-flex flex-column gap-2">
+            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+              <img src="../static/images/about.svg" alt="about" height="30">
+            </div>
+            <h4 class="fw-semibold mb-0 text-body-emphasis">About</h4>
+            <p class="text-body-secondary">You will get to know who Adnan Ghadieh is, my background, my hobbies,
+                my education and more.</p>
+          </div>
+
+          <div class="col d-flex flex-column gap-2">
+            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+              <img src="../static/images/briefcase.svg" alt="briefcase" height="30">
+            </div>
+            <h4 class="fw-semibold mb-0 text-body-emphasis">Work</h4>
+            <p class="text-body-secondary">You will get to see my work experience and understand what I was doing at each
+            job</p>
+          </div>
+
+          <div class="col d-flex flex-column gap-2">
+            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+              <img src="../static/images/project.svg" alt="project" height="30">
+            </div>
+            <h4 class="fw-semibold mb-0 text-body-emphasis">Projects</h4>
+            <p class="text-body-secondary">You will get to see all the amazing projects I've worked on in details.</p>
+          </div>
+
+          <div class="col d-flex flex-column gap-2">
+            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+              <img src="../static/images/contact.svg" alt="contact" height="30">
+            </div>
+            <h4 class="fw-semibold mb-0 text-body-emphasis">Contact</h4>
+            <p class="text-body-secondary">To be able to contact me whether by email, phone number, or LinkedIn</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% include 'footer.html' %}
