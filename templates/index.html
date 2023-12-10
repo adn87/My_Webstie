@@ -14,20 +14,24 @@
         <div class="row row-cols-1 row-cols-sm-2 g-4">
           <div class="col d-flex flex-column gap-2">
             <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-              <img src="../static/images/about.svg" alt="about" height="30">
+                <img src="../static/images/about.svg" alt="about" height="30">
             </div>
             <h4 class="fw-semibold mb-0 text-body-emphasis">About</h4>
             <p class="text-body-secondary">You will get to know who Adnan Ghadieh is, my background, my hobbies,
-                my education and more.</p>
+                my education and more.
+              <a href="{{ url_for('about') }}">Click Here</a> to view page.
+            </p>
           </div>
 
           <div class="col d-flex flex-column gap-2">
             <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-              <img src="../static/images/briefcase.svg" alt="briefcase" height="30">
+                <img src="../static/images/briefcase.svg" alt="briefcase" height="30">
             </div>
             <h4 class="fw-semibold mb-0 text-body-emphasis">Work</h4>
             <p class="text-body-secondary">You will get to see my work experience and understand what I was doing at each
-            job</p>
+            job.
+              <a href="{{ url_for('work') }}">Click Here</a> to view page.
+            </p>
           </div>
 
           <div class="col d-flex flex-column gap-2">
@@ -35,7 +39,9 @@
               <img src="../static/images/project.svg" alt="project" height="30">
             </div>
             <h4 class="fw-semibold mb-0 text-body-emphasis">Projects</h4>
-            <p class="text-body-secondary">You will get to see all the amazing projects I've worked on in details.</p>
+            <p class="text-body-secondary">You will get to see all the amazing projects I've worked on in details.
+              <a href="{{ url_for('projects') }}">Click Here</a> to view page.
+            </p>
           </div>
 
           <div class="col d-flex flex-column gap-2">
@@ -43,7 +49,9 @@
               <img src="../static/images/contact.svg" alt="contact" height="30">
             </div>
             <h4 class="fw-semibold mb-0 text-body-emphasis">Contact</h4>
-            <p class="text-body-secondary">To be able to contact me whether by email, phone number, or LinkedIn</p>
+            <p class="text-body-secondary">To be able to contact me whether by email, phone number, or LinkedIn.
+              <a href="{{ url_for('contact') }}">Click Here</a> to view page.
+            </p>
           </div>
         </div>
       </div>
