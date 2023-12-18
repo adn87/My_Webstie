@@ -18,8 +18,22 @@ class Work(db.Model):
     description = db.Column(db.Text, nullable=False)
 
 
+class Project(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(250), nullable=False)
+    description = db.Column(db.Text, nullable=False)
+
+
 with app.app_context():
     db.create_all()
+
+# with app.app_context():
+#     new_project = Project(
+#         title="TinDog",
+#         description="Created a tinder-like website for dogs using bootstrap."
+#     )
+#     db.session.add(new_project)
+#     db.session.commit()
 
 
 @app.route('/')
@@ -47,7 +61,9 @@ def description(job_id):
 
 @app.route('/projects')
 def projects():
-    return render_template('projects.html')
+    result = db.session.execute(db.select(Project).order_by(Project.id))
+    all_projects = result.scalars().all()
+    return render_template('projects.html', projects=all_projects)
 
 
 @app.route('/contact')
